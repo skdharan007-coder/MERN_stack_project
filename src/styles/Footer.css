@@ -1,0 +1,143 @@
+footer{
+    /* border: 2px solid red; */
+    height: 350px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.footer-logo,.quick-links,.contact,.collections{
+    /* border: 2px solid red; */
+    height: 200px;
+}
+
+.footer-logo img{
+    height: 60px;
+    width: 200px;
+}
+.quick-links ul,.contact ul,.collections ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align:  center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.quick-links a{
+color: white;
+text-decoration: none;
+}
+
+.quick-links h1,.contact h1,.collections h1{
+    color: white;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.contact{
+    width: 300px;
+}
+
+
+.copyright{
+    border-top: 1px solid white;
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------Tablet view--------------------------- */
+
+@media screen and (max-width:999px){
+
+    footer{
+        height: auto;
+        gap: 50px;
+        padding: 40px 20px;
+    }
+
+    .footer-logo,
+    .quick-links,
+    .collections,
+    .contact{
+        height: auto;
+    }
+
+    .footer-logo img{
+        width: 170px;
+        height: 50px;
+    }
+
+    .contact{
+        width: 250px;
+    }
+
+    .copyright{
+        text-align: center;
+        padding: 10px;
+        height: auto;
+    }
+}
+
+
+/* ---------------------Mobile view---------------------------- */
+
+@media screen and (max-width:767px){
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding: 30px 15px;
+    }
+
+    .footer-logo,
+    .quick-links,
+    .collections,
+    .contact{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .footer-logo img{
+        width: 150px;
+        height: 45px;
+    }
+
+    .quick-links ul,
+    .collections ul,
+    .contact ul{
+        align-items: center;
+    }
+
+    .contact{
+        width: 100%;
+    }
+
+    .contact li{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .copyright{
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .copyright p{
+        margin: 0;
+        font-size: 13px;
+    }
+}

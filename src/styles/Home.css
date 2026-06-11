@@ -1,0 +1,118 @@
+.cover{
+    /* border: 2px solid red; */
+    background-image: url("../assets/cover.jpg");
+    height: 550px;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+.home-products{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 20px;
+    height: 530px;
+    padding: 20px 50px 20px 50px;
+}
+.products-title{
+    margin: 0;
+    padding: 25px 0 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card{
+    width: 280px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img{
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+}
+
+.cart-btn{
+    background-color: #217961;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ---------------------Tablet view--------------------------- */
+
+@media screen and (max-width:999px){
+
+    .cover{
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home-products{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .product-card{
+        width: 220px;
+    }
+
+    .product-card img{
+        height: 300px;
+    }
+
+    .cart-btn{
+        padding: 10px 30px;
+    }
+}
+
+
+/* ---------------------Mobile view---------------------------- */
+
+@media screen and (max-width:767px){
+
+    .cover{
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .products-title{
+        font-size: 25px;
+        padding: 20px 0;
+    }
+
+    .home-products{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px;
+        gap: 30px;
+    }
+
+    .product-card{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .product-card img{
+        height: 350px;
+    }
+
+    .product-card h3{
+        font-size: 18px;
+    }
+
+    .product-card p{
+        font-size: 16px;
+    }
+
+    .cart-btn{
+        width: 100%;
+        padding: 12px;
+    }
+}

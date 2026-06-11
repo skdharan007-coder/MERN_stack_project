@@ -1,0 +1,179 @@
+nav{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    height: 60px;
+
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    box-sizing: border-box;
+
+}
+
+
+.search,.logo,.account,.cart,.home{
+    /* border: 2px solid blue; */
+}
+.search{
+    margin-right: 20px;
+}
+.search ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+.search p{
+font-size: 12px;
+}
+.search i{
+    font-size: 20px;
+}
+.logo{
+    display: flex;
+    justify-content:  center;
+     flex-wrap: wrap;
+    flex-grow: 1;
+}
+.logo img{
+    height: 40px;
+    width: 150px;
+    padding-left: 50px;
+}
+.account{
+    display: flex;
+     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.home{
+    margin-right: 10px;
+}
+.account a{
+    text-decoration: none;
+    color: black;
+}
+.account ul{
+    /* border: 2px solid green; */
+    display: flex;
+     flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    gap: 10px;
+}
+
+.account i{
+    font-size: 20px;
+}
+.cart{
+    display: flex;
+     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.cart a{
+    text-decoration: none;
+    color: black;
+}
+.cart ul{
+    /* border: 2px solid green; */
+    display: flex;
+     flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    gap: 10px;
+}
+.cart i{
+    font-size: 20px;
+}
+
+/* ---------------------Tablet view--------------------------- */
+
+@media screen and (max-width:999px){
+
+    .search p{
+        display: none;
+    }
+
+    .logo img{
+        width: 130px;
+        height: 35px;
+        padding-left: 0;
+    }
+
+    .account li:nth-child(2){
+        display: none;
+    }
+
+    .home{
+        display: none;
+    }
+
+    .cart{
+        margin-left: 10px;
+    }
+}
+
+
+/* ---------------------Mobile view---------------------------- */
+
+@media screen and (max-width:767px){
+
+    nav{
+        padding: 0 10px;
+        height: 55px;
+    }
+
+    .search p{
+        display: none;
+    }
+
+    .home{
+        display: none;
+    }
+
+    .account li:nth-child(2){
+        display: none;
+    }
+
+    .logo{
+        flex-grow: 1;
+    }
+
+    .logo img{
+        width: 110px;
+        height: 30px;
+        padding-left: 0;
+    }
+
+    .search i,
+    .account i{
+        font-size: 18px;
+    }
+
+    .cart{
+        margin-left: 10px;
+    }
+
+    .cart ul{
+        gap: 0;
+    }
+
+    .cart li{
+        font-size: 14px;
+    }
+}
